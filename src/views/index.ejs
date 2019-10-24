@@ -1,0 +1,55 @@
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+	<style>
+		#bg {
+			position:fixed;
+			top:-50%;
+			left:-50%;
+			width:200%;
+			height:200%;
+		}
+		#bg img {
+			position:absolute;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			margin:auto;
+			min-width:50%;
+			min-height:50%;
+		}
+
+		#page-wrap {
+			height: 100%;
+			position: relative;
+			z-index: 2;
+			width: 100%;
+			/* margin: 50px auto; */
+			/* padding: 20px; */
+			/* background: white;
+			-moz-box-shadow: 0 0 20px black;
+			-webkit-box-shadow: 0 0 20px black;
+			box-shadow: 0 0 20px black; */
+		}
+		div {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 80px;
+			color: white;
+			font-family: 'Dancing Script', cursive;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="page-wrap">
+		<div><%= message %></div>
+	</div>
+	<div id="bg">
+		<img src="<%= backGround %>">
+	</div>
+</body>
+
+</html>
