@@ -21,9 +21,7 @@ app.set('view engine', 'ejs');
 
 app.use(express.static(path.join(__dirname, 'assets')));
 
-// define a route handler for the default home page
 app.get('/', (req, res) => {
-	// render the index template
 	res.render('index', { message, backGround });
 });
 
@@ -43,5 +41,5 @@ app.get('/shodan', (req, res) => {
 
 app.listen(port, () => {
 	// tslint:disable-next-line:no-console
-	console.log(`server started at http://localhost:${port}`);
+	console.info(`server started at http://localhost:${port}`);
 });
