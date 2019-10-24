@@ -3,11 +3,8 @@ import express from 'express';
 import path from 'path';
 import shodanQuotes from './shodan';
 
-// initialize configuration
 dotenv.config();
 
-// port is now available to the Node.js runtime
-// as if it were an environment variable
 const port = process.env.SERVER_PORT;
 
 const app = express();
@@ -15,7 +12,6 @@ const app = express();
 let message = 'asd';
 let backGround = 'https://storage.pixteller.com/designs/designs-images/2019-03-27/05/love-and-passion-background-backgrounds-romantic-1-5c9b994b4e604.png';
 
-// Configure Express to use EJS
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
